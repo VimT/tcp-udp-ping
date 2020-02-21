@@ -18,6 +18,7 @@ setup(
     author='VimT',
     author_email='me@vimt.me',
     url='https://github.com/VimT/tcp-udp-ping',
+    py_modules=['tcp_udp_ping'],
     entry_points={
         'console_scripts': [
             'tcp_udp_ping = tcp_udp_ping:main',
