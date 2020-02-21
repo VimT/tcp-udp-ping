@@ -2,13 +2,14 @@
 
 tcp_udp_ping - ping to network hosts in tcp/udp
 
-## install
+## Install
+require python version `>=2.6` or `>=3.4`
 
 ```shell script
-pip install git+https://github.com/VimT/tcp-udp-ping
+pip install -U git+https://github.com/VimT/tcp-udp-ping
 ```
 
-## usage
+## Usage
 
 ```
 Usage: tcp_udp_ping [options] host port
@@ -31,8 +32,11 @@ Options:
     -s SIZE, --size=SIZE
 ```
 
-## example
+## Examples
 ```shell script
 # tcp ping to google.com
 tcp_udp_ping google.com 80
+
+# udp ping to google.com (udp ping need server return any package) 
+tcp_udp_ping -u google.com 80
 ```
